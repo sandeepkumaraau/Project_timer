@@ -1,0 +1,94 @@
+/* src/styles/Project.css */
+
+:root {
+  --project-bg: #ffffff;
+  --project-border: #e0e0e0;
+  --project-shadow: rgba(0, 0, 0, 0.5);
+  --title-color: #2c3e50;
+  --text-color: #555555;
+  --button-bg: #e74c3c;
+  --button-bg-hover: #c0392b;
+  --button-text: #ffffff;
+}
+
+/* Modern Project Card */
+.project {
+  background-color: var(--project-bg);
+  border: 1px solid var(--project-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--project-shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px var(--project-shadow);
+}
+
+.project h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  color: var(--title-color);
+}
+
+.project p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.project button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.project button:hover {
+  background-color: var(--button-bg-hover);
+  transform: scale(1.05);
+}
+
+.project ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0 0;
+}
+
+.project li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.project li:last-child {
+  border-bottom: none;
+}
+/* src/styles/Timer.css */
+.timer {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.timer h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timer .timer-buttons {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}

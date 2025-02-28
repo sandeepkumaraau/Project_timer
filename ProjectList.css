@@ -1,0 +1,21 @@
+/* src/components/ProjectList.css */
+.project-list {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 2px solid #ffffff;
+}
+
+.project-item:hover {
+  background-color: #ffd0d0;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}

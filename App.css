@@ -1,0 +1,120 @@
+/* src/styles/App.css */
+
+/* Global Variables */
+:root {
+  --primary-bg: #f3f2f2;
+  --app-bg: #060606;
+  --text-color: #000000;
+  --accent-color: #007bff;
+  --accent-hover: #0056b3;
+}
+
+/* Reset margins and padding */
+body {
+  margin: 2;
+  padding: 2;
+  background-color: var(--app-bg);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+}
+
+/* Main container */
+.App {
+  max-width: 1500px;
+  margin: 60px auto;
+  padding: 60px;
+  background-color: var(--primary-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  min-height: calc(100vh - 80px);
+}
+
+/* Header with logo and Add Project button */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+/* Large Add Project Button */
+.add-project-button {
+  font-size: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-project-button:hover {
+  background-color: var(--accent-hover);
+  transform: scale(1.05);
+}
+
+/* Layout container for three columns */
+.layout {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left Panel: Project List */
+.left-panel {
+  flex: 1;
+  background-color: #fb9de2;
+  padding: 10px;
+  border-radius: 1px;
+  box-shadow: 0 1px 3px rgb(255, 255, 255);
+  border-right: 1px solid #ddd;
+}
+
+/* Center Panel: Timer */
+.center-panel {
+  flex: 1.5;
+  background-color: #adfebc;
+  padding: 1px;
+  border-radius: 1px;
+  box-shadow: 0 3px 3px rgba(0.5, 0.5, 0.5, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right Panel: Session Details */
+.right-panel {
+  flex: 1;
+  background-color: #bbc0f9;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #ddd;
+}
+
+/* Placeholder styles */
+.placeholder {
+  text-align: center;
+  color: #000000;
+  font-size: 1.1rem;
+}
+.right-panel ul {
+  list-style: inside;
+  margin: 5px;
+  padding: 2px;
+}
+
+.right-panel ul li {
+  padding: 8px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.right-panel ul li:last-child {
+  border-bottom: none;
+}

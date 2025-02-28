@@ -1,0 +1,76 @@
+/* src/styles/Project.css */
+
+/* Define project-specific variables */
+:root {
+  --project-bg: #ffffff;
+  --project-border: #e0e0e0;
+  --project-shadow: rgba(0, 0, 0, 0.05);
+  --title-color: #222;
+  --text-color: #555;
+  --button-bg: #ff4d4d;
+  --button-bg-hover: #e60000;
+}
+
+/* Project card container */
+.project {
+  background-color: var(--project-bg);
+  border: 1px solid var(--project-border);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px var(--project-shadow);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 5px var(--project-shadow);
+}
+
+/* Project title styling */
+.project h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+/* Paragraph styling */
+.project p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+/* Button styling inside project cards */
+.project button {
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.project button:hover {
+  background-color: var(--button-bg-hover);
+  transform: scale(3.02);
+}
+
+/* Session list styling */
+.project ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.project li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.project li:last-child {
+  border-bottom: none;
+}
